@@ -1,0 +1,139 @@
+<!-- slide -->
+PRESENTATION WRITER
+by Markdown Preview Enhanced
+powered by reveal.js
+press ? key to see keyboard help.
+press s key to open note window.
+press arrow key to navigate.
+press esc to toggle overview.
+You can easily create beautiful presentation by running command
+Markdown Preview Enhanced: Insert New Slide
+Or just insert to your markdown file
+<!-- slide -->
+Multiple Presentation themes are supported, you can change it easily from the extension settings.
+vscode
+atom
+<!-- slide -->
+You can easily create beautiful presentation by running command
+Markdown Preview Enhanced: Insert New Slide
+Or just insert to your markdown file
+\<!-- slide -->
+<!-- slide -->
+Multiple Presentation themes are supported, you can change it easily from the extension settings.
+markdown-preview-Enhanced.revealjsTheme:"White.css"
+<!-- slide -->
+### All features of Markdown Preview Enhanced are supported.
+
+<!-- slide -->
+You can set initialization config for your presentation.
+Just add front-matter to your presentation markdown file.
+
+```markdown
+presentation:
+    width:800
+    height:600
+    controls:false
+```
+More information about front-matter settings can be found here.
+<!-- slide -->
+Speaker notes is also supported (not in preview).
+Press the s key on your keyboard to open the notes window.
+
+To enable speaker notes, set front-matter as:
+```html
+presentation:
+  enableSpeakerNotes: true
+```
+To add notes, simply set data-notes property:
+```html 
+<!-- slide data-notes="Write your note here" -->
+```
+check Reveal.js Speaker Notes section for more information.
+<!-- slide -->
+Speaker notes is also supported (not in preview).
+Press the s key on your keyboard to open the notes window.
+
+To enable speaker notes, set front-matter as:
+```
+presentation:
+  enableSpeakerNotes: true
+```
+To add notes, simply set data-notes property:
+```
+<!-- slide data-notes="Write your note here" -->
+```
+<!-- slide -->
+By default, all slides are aligned horizontally, but you can also create vertical slides by adding vertical=true.
+For example:
+\<!-- slide vertical=true -->
+<!-- slide  vertical=true -->
+check Reveal.js Speaker Notes section for more information.
+<!-- slide -->
+You can set id and class for your slide like this:
+```
+<!-- slide id="my-id" class="my-class1 my-class2" -->
+```
+You can set slide background very easily.
+For example:
+```
+<!-- slide data-background-color="#ff0000" -->
+```
+<!-- slide data-background-color="#00ff00" -->
+<!-- slide -->
+Of course you can do more about slide background.
+
+data-background-image
+URL of the image to show. GIFs restart when the slide opens.
+data-background-size
+See background-size on MDN.
+data-background-position
+See background-position on MDN.
+data-background-repeat
+See background-repeat on MDN.
+<!-- slide -->
+You can also set video background and iframe background.
+
+data-background-video
+A single video source, or a comma separated list of video sources.
+data-background-video-loop
+Flags if the video should play repeatedly.
+data-background-video-muted
+Flags if the audio should be muted.
+data-background-iframe
+Embeds a web page as a background.
+<!-- slide -->
+Fragment is supported.
+```
+- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+```
+- Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
+- Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
+<!-- slide -->
+For example, the markdown snippet below will generate slide like...
+```
+<!-- slide data-background-image="https://i.loli.net/2017/07/12/5965b7edd3a2a.jpeg" data-transition="zoom" -->
+<p style="color: #fff;">国漫大法好！</p>
+<p style="color: #fff;">国漫大法好！</p>
+<p style="color: #fff;">国漫大法好！</p>
+```
+<!-- slide data-background-image="https://i.loli.net/2017/07/12/5965b7edd3a2a.jpeg" data-transition="zoom" -->
+<p style="color: #fff;">国漫大法好！</p>
+<p style="color: #fff;">国漫大法好！</p>
+<p style="color: #fff;">国漫大法好！</p>
+<!-- slide -->
+It is also very easy to customize presentation css.
+Run command:
+Markdown Preview Enhanced: Customize Css
+then edit:
+``` css
+.markdown-preview.markdown-preview {
+  .slides {
+    // This will modify all slides.
+  }
+  .slides > section:nth-child(1) {
+    // This will modify `the first slide`.
+    background-color: blue;
+  }
+}
+```
